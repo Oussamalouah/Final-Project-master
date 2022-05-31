@@ -144,6 +144,7 @@ h2{
    z-index:1000;
    display: block;
    width:100vh;
+   
  
 }
 .info h1{
@@ -253,10 +254,22 @@ margin-top: 55px;
 margin-right:10rem;
 }
 .trust-pic{
-
-
+   margin-top: 55px;
 }
+
 .trust-pic h2{
    color: black;
+   
+   
+}
+#stars{
+   margin-left: 20px;
+}
+.line{
+   height:60px;
+   width: 1px;
+   background-color: #9C9C9C;
+   margin-top: 50px;
+   margin-right: 8rem;
    
 }

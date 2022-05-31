@@ -58,9 +58,10 @@
                    <h3>Elite Coaches</h3>
                    <p>Top 1% of players globally</p>
                 </div>
+                <div class="line"></div>
                 <div class="trust-pic">
-                  <img src="./img/stars.png" alt="">
-                  <h2>Trusted by Gamers</h2>
+                  <img id ="stars"src="./img/stars.png" alt="">
+                  <p>Trusted by Gamers</p>
                 </div>
             </div>
       </div>
