@@ -66,6 +66,19 @@
             </div>
       </div>
    </div>
+   <p id ="prop">Our Professional Players</p>
+   <div class="pro-section">
+         <div class="pros-pics">
+            <img src="./img/Imperialhal.png" alt="">
+            <img src="./img/doublelift.png" alt="">
+            <img src="./img/tenz.png" alt="">
+         </div>
+      </div>
+      <div class="pros-names">
+           <p id="imp">Imperialhal</p>
+           <p id ='double'>Doublelift</p>
+           <p id='tenz'>Tenz</p>
+         </div>
    <script src="./script.js"></script> 
 </body>
 </html>
