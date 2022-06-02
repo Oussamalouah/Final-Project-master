@@ -289,15 +289,18 @@ margin-right:10rem;
 .pro-section{
    display: flex;
    align-items:center;
-   width:100%;;
+   width:100%;
+   height: 25rem;
    
 }
 .pros-pics{
   width: 100%;
-  margin-top:80px;
+  
  
-}.pros-pics img{
+}
+.pros-pics img{
    padding-left: 24rem;
+   margin-top: -50px;
 }
 .pros-names {
    display: flex;
@@ -307,6 +310,8 @@ margin-right:10rem;
    padding-left:26.5rem;
    font-family: 'Quicksand', sans-serif;
    font-size: 20px;
+   position: relative;
+   bottom:150px;
    
 }
 #double{
@@ -316,4 +321,54 @@ margin-right:10rem;
 #imp{
    position: relative;
   right:30px;
+}
+footer{
+   background-color: black;
+   display: flex;
+   height:10rem;
+   
+}
+footer img{
+   height:60px;
+   width: 70px;
+   display: flex;
+
+}
+.company-info{
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   list-style: none;
+   padding-left:9rem;
+   margin-top: 20px;
+}
+#Quicksand{
+   font-family: 'Quicksand', sans-serif; 
+   color: white;
+   position: relative;
+   top: 20px;
+}
+.games{
+   margin-top: 20px;
+   padding-left:35rem;
+}
+#games{
+   color: white;
+   list-style: none;
+}
+#lol{
+   color: white;
+   font-family: 'Quicksand', sans-serif; 
+   list-style: none;
+   padding-left:40px;
+   position: relative;
+   top: 20px;
+}
+#lolimg{
+   height: 20px;
+   width: 20px; 
+
+}
+.social li{
+   color: white;
+   list-style: none;
 }

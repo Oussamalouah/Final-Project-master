@@ -14,6 +14,7 @@
     <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -79,6 +80,29 @@
            <p id ='double'>Doublelift</p>
            <p id='tenz'>Tenz</p>
          </div>
+   <footer>
+            <img src="./img/logo.png" alt="">
+            <div class="company-info">
+               <li>COMPANY INFO</li>
+               <li id="Quicksand">Pricing</li>
+               <li id="Quicksand">Terms and Conditions </li>
+               <li id="Quicksand">Privacy Policy</li> 
+            </div>
+           <div class="games">
+              <li id="games">GAMES</li>
+              <li id="lol">Leauge Of Legends </li>
+              <img id ="lolimg"src="./img/logolol.png" alt="">
+           </div>
+           <div class="social">
+               <li>Social</li>
+               <li id="Quicksand">Youtube</li>
+               <i class="fa-brands fa-youtube"></i>
+               <li id="Quicksand">Instagram</li>
+               <li id="Quicksand">Twitter</li>   
+               <li id="Quicksand">Facebook</li>
+           </div>
+   </footer>
+   <script src="https://kit.fontawesome.com/3866beb01d.js" crossorigin="anonymous"></script>
    <script src="./script.js"></script> 
 </body>
 </html>
