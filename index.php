@@ -66,6 +66,54 @@
             </div>
       </div>
    </div>
+   <p id ="prop">Our Professional Players</p>
+   <div class="pro-section">
+         <div class="pros-pics">
+            <img src="./img/Imperialhal.png" alt="">
+            <img src="./img/doublelift.png" alt="">
+            <img src="./img/tenz.png" alt="">
+         </div>
+      </div>
+      <div class="pros-names">
+           <p id="imp">Imperialhal</p>
+           <p id ='double'>Doublelift</p>
+           <p id='tenz'>Tenz</p>
+         </div>
+   <footer>
+            <img src="./img/logo.png" alt="">
+            <div class="company-info">
+               <li>COMPANY INFO</li>
+               <li id="Quicksand">Pricing</li>
+               <li id="Quicksand">Terms and Conditions </li>
+               <li id="Quicksand">Privacy Policy</li> 
+            </div>
+           <div class="games">
+              <li id="games">GAMES</li>
+              <li id="lol">Leauge Of Legends </li>
+              <img id ="lolimg"src="./img/logolol.png" alt="">
+           </div>
+           <div class="social">
+               <li>Social</li>
+               <div class="youtube">
+               <img src="./img/yt.png" alt="">
+               <li id="Quicksand">Youtube</li>
+               </div>
+              <div class ="insta">
+              <img src="./img/instagram.png" alt="">
+              <li id="Quicksand">Instagram</li>
+              </div>
+              <div class="twitter">
+              <img src="./img/twitter.png" alt="">
+              <li id="Quicksand">Twitter</li>
+              </div>
+              <div class="facebook">
+              <img src="./img/facebook.png" alt="">
+              <li id="Quicksand">Facebook</li>
+              </div>   
+           </div>
+           <div>
+           </div>
+   </footer>
    <script src="./script.js"></script> 
 </body>
 </html>
