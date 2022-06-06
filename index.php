@@ -14,7 +14,6 @@
     <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -95,14 +94,26 @@
            </div>
            <div class="social">
                <li>Social</li>
+               <div class="youtube">
+               <img src="./img/yt.png" alt="">
                <li id="Quicksand">Youtube</li>
-               <i class="fa-brands fa-youtube"></i>
-               <li id="Quicksand">Instagram</li>
-               <li id="Quicksand">Twitter</li>   
-               <li id="Quicksand">Facebook</li>
+               </div>
+              <div class ="insta">
+              <img src="./img/instagram.png" alt="">
+              <li id="Quicksand">Instagram</li>
+              </div>
+              <div class="twitter">
+              <img src="./img/twitter.png" alt="">
+              <li id="Quicksand">Twitter</li>
+              </div>
+              <div class="facebook">
+              <img src="./img/facebook.png" alt="">
+              <li id="Quicksand">Facebook</li>
+              </div>   
+           </div>
+           <div>
            </div>
    </footer>
-   <script src="https://kit.fontawesome.com/3866beb01d.js" crossorigin="anonymous"></script>
    <script src="./script.js"></script> 
 </body>
 </html>
