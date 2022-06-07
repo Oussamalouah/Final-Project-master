@@ -27,7 +27,33 @@
         <div class="bronze">
         <img src="./img/bronze.png" alt="">
             <p>Bronze</p>
-        </div>    
+        </div> 
+        <div class="silver">
+        <img src="./img/silver.png" alt="">
+            <p>Silver</p>
+        </div>  
+        <div class="gold">
+        <img src="./img/gold.png" alt="">
+            <p>Gold</p>
+        </div>  
+        <div class="plat">
+        <img src="./img/plat.png" alt="">
+            <p>Platinum</p>
+        </div>  
+        <div class="diam">
+        <img src="./img/diam.png" alt="">
+            <p>Diamond</p>
+        </div>  
+        <div class="division">
+         <h2>DIVISION :</h2>
+         <div class="buttons">
+            <button value="I">I</button>
+            <button value="II">II</button>
+            <button value="III">III</button>
+            <button value="IV">IV</button>
+        </div>
+         </div>
+         <button id ="finish-btn">FINISH</button>
       </div> 
 </div>
 </body>

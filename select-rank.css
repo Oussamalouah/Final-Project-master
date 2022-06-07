@@ -6,24 +6,32 @@
 body{
     background-color: #FAF7F7;
 }
-.title{
-    padding: 25rem 10rem;
-}
+
 .title h1{      
     font-size: 100px;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 20rem;
+    padding-left: 30px;
 }
 .title h3{
     font-family: 'Quicksand', sans-serif;
     font-size: 40px;
+    position: relative;
+    top: 20rem;
+    padding-left: 30px;
 }
 .quiz{
     display: flex;
     flex-direction: column;
     align-items:center;
     position: relative;
-    bottom: 35rem;
-    left: 20rem;
+    bottom:15rem;
+    left: 40rem;
+    height: 100%;
+    width: 80rem;
+    
+    
 }
 .iron{
     display: flex;
@@ -33,6 +41,16 @@ body{
     height: 20px;
     width: 50rem;
     border-radius: 5px;
+    box-shadow: 0 0 15px rgb(111 124 139 / 15%) ;
+    cursor: pointer;
+}
+.iron p {
+    position: relative;
+    left:40px;
+}
+.iron img {
+    position: relative;
+   left: 20px;
 }
 .quiz img{
     height: 90px;
@@ -54,15 +72,148 @@ body{
     width: 50rem;
     border-radius: 5px;
     margin-top: 20px;
+    box-shadow: 0 0 15px rgb(111 124 139 / 15%) ;
+    cursor: pointer;
 }
 .bronze img{
     height: 65px;
     width: 65px;
     position: relative;
     bottom: 12px;
-    left: 5px;
+    left: 25px;
 }
 .bronze p{
     position: relative;
-    left :15px;
+    left :60px;
+}
+.silver{
+    display: flex;
+    border:solid white;
+    background-color: white;
+    padding: 1.5rem 0rem 2.5rem;
+    height: 20px;
+    width: 50rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgb(111 124 139 / 15%) ;
+    cursor: pointer;
+}
+.silver img{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    bottom: 20px;
+    left:18px;
+}
+.silver p{
+    position: relative;
+    left:47px;
+}
+.gold{
+    display: flex;
+    border:solid white;
+    background-color: white;
+    padding: 1.5rem 0rem 2.5rem;
+    height: 20px;
+    width: 50rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgb(111 124 139 / 15%) ;
+    cursor: pointer;
+}
+.gold img{
+    height: 80px;
+    width: 170px;
+    position: relative;
+    bottom: 20px;
+    right:25px;
+}
+.gold p{
+    position: relative;
+    right:2.5rem;
+}
+.plat{
+    display: flex;
+    border:solid white;
+    background-color: white;
+    padding: 1.5rem 0rem 2.5rem;
+    height: 20px;
+    width: 50rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgb(111 124 139 / 15%) ;
+    cursor: pointer;
+}
+.plat img{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    bottom: 20px;
+    left:22px;
+}
+.plat p{
+    position: relative;
+    left:50px;
+}
+.diam{
+    display: flex;
+    border:solid white;
+    background-color: white;
+    padding: 1.5rem 0rem 2.5rem;
+    height: 20px;
+    width: 50rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgb(111 124 139 / 15%) ;
+    cursor: pointer;
+}
+.diam img{
+    height: 90px;
+    width: 85px;
+    position: relative;
+    bottom:25px;
+    left:20px;
+}
+.diam p{
+    position: relative;
+    left:45px;
+}
+.division {
+    display: flex;
+    padding: 1.5rem 0rem 2.5rem;
+    width: 50rem;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.buttons {
+    margin-top:60px;
+    position: relative;
+    right: 130px;
+   
+    
+    
+}
+.buttons button{
+    background-color: white;
+    border: solid white; 
+    padding: 25px;
+    margin-left: 10px;
+    box-shadow: 0 0 15px rgb(111 124 139 / 15%);
+    cursor: pointer;
+    font-size: 25px;
+}
+#finish-btn{
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: #E72150;
+   padding: 30px 100px;
+   position: relative;
+   right: 16.6rem;
+   
 }
