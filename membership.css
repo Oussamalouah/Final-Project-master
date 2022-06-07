@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E72150;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+   
+}
+.text{
+    align-items: flex-start;
+    margin-top: 20rem;
+    margin-left: 20px;
+}
+.text h1{
+    font-family: 'Roboto';
+    font-size: 70px;
+}
+h2{
+    font-family: 'Quicksand';
+    font-size: 40px;
+}
+.pro{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    
+ 
+   
+}
+.pro h1{
+
+}
