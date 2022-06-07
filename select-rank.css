@@ -201,6 +201,38 @@ body{
     box-shadow: 0 0 15px rgb(111 124 139 / 15%);
     cursor: pointer;
     font-size: 25px;
+    border-radius: 3px;
+}
+button:focus{
+    color: red;
+    border: solid black;
+    animation: anim-shadow .3s forwards;
+}
+.iron:focus{
+    border:solid black;
+}
+.bronze:focus{
+    border:solid black;
+}
+.silver:focus{
+    border:solid black;
+}
+.gold:focus{
+    border:solid black;
+}
+.plat:focus{
+    border:solid black;
+}
+.diam:focus{
+    border:solid black;
+}
+@keyframes anim-shadow{
+    50%{
+        box-shadow: 0px 0px 10px 10px #E72150;
+    }
+    100%{
+        box-shadow: 0px 0px 0px 0px red;
+    }
 }
 #finish-btn{
    border-radius: 5px;

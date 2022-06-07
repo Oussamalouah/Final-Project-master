@@ -20,37 +20,37 @@
      <h1>Select your<br> current rank</br></h1>
       <h3>We use this to create your plan </h3> 
       <div class="quiz">
-        <div class="iron">
+        <div class="iron" tabindex="1">
             <img src="./img/iron.png" alt="">
             <p>Iron</p>
         </div>  
-        <div class="bronze">
+        <div class="bronze" tabindex="1">
         <img src="./img/bronze.png" alt="">
             <p>Bronze</p>
         </div> 
-        <div class="silver">
+        <div class="silver" tabindex="1">
         <img src="./img/silver.png" alt="">
             <p>Silver</p>
         </div>  
-        <div class="gold">
+        <div class="gold" tabindex="1">
         <img src="./img/gold.png" alt="">
             <p>Gold</p>
         </div>  
-        <div class="plat">
+        <div class="plat" tabindex="1">
         <img src="./img/plat.png" alt="">
             <p>Platinum</p>
         </div>  
-        <div class="diam">
+        <div class="diam" tabindex="1">
         <img src="./img/diam.png" alt="">
-            <p>Diamond</p>
+            <p >Diamond</p>
         </div>  
         <div class="division">
          <h2>DIVISION :</h2>
          <div class="buttons">
-            <button value="I">I</button>
-            <button value="II">II</button>
-            <button value="III">III</button>
-            <button value="IV">IV</button>
+            <button type="button" value="I">I</button>
+            <button type="button" value="II">II</button>
+            <button type="button" value="III">III</button>
+            <button type="button" value="IV">IV</button>
         </div>
          </div>
          <button id ="finish-btn">FINISH</button>
