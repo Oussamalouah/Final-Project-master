@@ -20,27 +20,27 @@
      <h1>Select your<br> current rank</br></h1>
       <h3>We use this to create your plan </h3> 
       <div class="quiz">
-        <div class="iron" tabindex="1">
+        <div class="iron" tabindex="2">
             <img src="./img/iron.png" alt="">
             <p>Iron</p>
         </div>  
-        <div class="bronze" tabindex="1">
+        <div class="bronze" tabindex="2">
         <img src="./img/bronze.png" alt="">
             <p>Bronze</p>
         </div> 
-        <div class="silver" tabindex="1">
+        <div class="silver" tabindex="2">
         <img src="./img/silver.png" alt="">
             <p>Silver</p>
         </div>  
-        <div class="gold" tabindex="1">
+        <div class="gold" tabindex="2">
         <img src="./img/gold.png" alt="">
             <p>Gold</p>
         </div>  
-        <div class="plat" tabindex="1">
+        <div class="plat" tabindex="2">
         <img src="./img/plat.png" alt="">
             <p>Platinum</p>
         </div>  
-        <div class="diam" tabindex="1">
+        <div class="diam" tabindex="2">
         <img src="./img/diam.png" alt="">
             <p >Diamond</p>
         </div>  
