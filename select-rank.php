@@ -3,8 +3,9 @@ error_reporting(0);
 require 'connect.php';
 if(isset($_POST['finish'])){
     $Niveau = $_POST['Niveau'];
-    if((isset($_POST['Niveau']))){
-        $sql="INSERT INTO `joueur`(`Niveau`) VALUES ('$Niveau')";
+    $div1 = $_POST['div1'];
+    if($_POST['Niveau'] and $_POST['div1']){
+        $sql="INSERT INTO `joueur`(`Niveau`,`Divisions`) VALUES ('$Niveau',' $div1')";
         $result= mysqli_query($mysqli,$sql);
 }
     }   
@@ -67,10 +68,22 @@ if(isset($_POST['finish'])){
         <div class="division">
          <h2>DIVISION :</h2>
          <div class="buttons">
-            <button type="button" value="I">I</button>
-            <button type="button" value="II">II</button>
-            <button type="button" value="III">III</button>
-            <button type="button" value="IV">IV</button>
+            <div class="form-horizontal">
+                <button type="button" value="I">I</button> 
+                <input type="radio" name ="div1" value="I">
+            </div>
+            <div>
+                <button type="button" value="II">II</button>  
+                <input type="radio" name ="div1" value="II">
+            </div>
+            <div>
+                <button type="button" value="III">III</button>
+                <input type="radio" name ="div1" value="III">
+            </div>
+            <div>
+                <button type="button" value="IV">IV</button>
+                <input type="radio" name ="div1" value="IV">
+            </div>
         </div>
          </div>
      </form>

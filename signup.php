@@ -1,7 +1,10 @@
 <?php
-error_reporting(0);
 session_start();
+error_reporting(0);
 require 'connect.php';
+if(!empty($_SESSION["IDJoueur"])){
+  header("location: index.php");
+}
 // INSERTING DATA INTO DATABASE
 if(isset($_POST['registerbtn'])){
     $Nomutilisateur = $_POST['Nomutilisateur'];
@@ -15,6 +18,7 @@ if(isset($_POST['registerbtn'])){
         $result= mysqli_query($mysqli,$sql);
         header("location: login.php");
       }
+      
 
 ?>
 <!DOCTYPE html>
@@ -43,7 +47,7 @@ if(isset($_POST['registerbtn'])){
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" name ="Password" placeholder="Enter your password" required>
+            <input type="password" name ="Password" placeholder="Enter your password" required>
           </div>
           <div class="input-box">
             <span class="details">DiscordID #0101</span>

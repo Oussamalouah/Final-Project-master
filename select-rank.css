@@ -223,6 +223,7 @@ body{
     margin-top: 20px;
 }
 .buttons {
+    display: flex;
     margin-top:60px;
     position: relative;
     right: 130px;
@@ -239,12 +240,19 @@ body{
     cursor: pointer;
     font-size: 25px;
     border-radius: 3px;
+    
 }
 button:focus{
     color: red;
     border: solid black;
     animation: anim-shadow .3s forwards;
 }
+.buttons input {
+    position: relative;
+    top: 70px;
+    right: 45px;
+}
+
 .iron:focus{
     border:solid black;
 }
@@ -284,7 +292,7 @@ button:focus{
    padding: 30px 100px;
    position: relative;
    right: 16.6rem;
-   
+   top:20PX;
 }
 .finish-btn a {
     text-decoration: none;

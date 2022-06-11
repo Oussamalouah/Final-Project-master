@@ -28,6 +28,7 @@ create table Joueur
    Password              varchar(254) not null,
    CompteDiscord          varchar(50) not null,
    Niveau                   varchar(50) not null,
+   Divisions                  varchar(50) not null,
    primary key (IDJoueur)
 
 );
