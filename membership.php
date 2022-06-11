@@ -24,7 +24,7 @@
            <p>-Your games analyzed<span> by pros</span></p>
            <p>-Exclusive access <span>to courses with the world's best pros</span></p>
            <p>-10% off more coaching</p>
-           <button  class ="button"><b>TRY PRO NOW</br></button>
+           <button  class ="button"><b> <a href ="coach.php">TRY PRO NOW</a></br></button>
        </div>
     </div>
     

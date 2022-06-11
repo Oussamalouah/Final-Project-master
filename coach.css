@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: linear-gradient(-135deg, #e83061, #f924a0);
+    
+}
 .container{
     margin-top:15rem;
 }
@@ -28,14 +32,14 @@ h1{
     flex-direction:row;
     justify-content: center;
     justify-content:space-evenly;
-
+   
 }
 .names button {
     font-size:30px;
     font-family:"Quicksand";
     margin-top: 30px;
-    background-color: white;
-    border:solid black;
+   background-color:red;
+    border:solid red;
     border-radius: 5px;
     padding: 10px;
 }
@@ -53,18 +57,18 @@ h1{
     right:120px;
 }
 .tenz:focus{
-    color: red;
-    border: solid  #E72150;
+    color: rgb(255, 255, 255);
+    border: solid  #ffffff;
     animation: anim-shadow .3s forwards;
 }
 .double:focus{
-    color: red;
-    border: solid  #E72150;
+    color: rgb(255, 255, 255);
+    border: solid  #ffffff;
     animation: anim-shadow .3s forwards;
 }
 .imp:focus{
-    color: red;
-    border: solid  #E72150;
+    color: white;
+    border: solid  rgb(255, 255, 255);
     animation: anim-shadow .3s forwards;
 }
 @keyframes anim-shadow{
@@ -85,12 +89,11 @@ h1{
 .btn button{
     height: 60px;
     width: 400px;
-   
     opacity: .95;
     border: none;
-    background-color: #E72150;
+    background-color: #000000;
     border-radius: 5px;
-    color: white;
+    color: white    ;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     cursor: pointer;
@@ -99,8 +102,16 @@ h1{
     
 }
 .btn button:hover{
-
-    background: linear-gradient(-135deg, #e83061, #000000);
+    color: black;
+    border: solid white;
+    background: white   ;
     }
+.button a {
+    text-decoration: none;
+    color: white;
+}
+.btn button a:hover{
+    color: black;
+}
 
 

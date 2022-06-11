@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <div class="title">ZEUSGUIDES</div>
-    <div class="sign-in">Don’t have an account?   <a href ="">Sign Up</a></div>
+    <div class="sign-in">Don’t have an account?   <a href ="signup.php">Sign Up</a></div>
     <div class="content">
       <form action="#">
         <div class="user-details">
@@ -24,8 +24,8 @@
           </div>
         </div>
         <div class="gender-details">
-        <div class="button">
-          <input type="submit" value="Sign Up">
+         <div class="button" >
+         <a href ="quiz.php"><input type ="text"  value = "LOG IN"></a>
         </div>
       </form>
     </div>

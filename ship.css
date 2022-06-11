@@ -90,6 +90,10 @@ span{
     margin-top: 60px;
     margin-left: 100px;
 }
+.button a {
+    text-decoration: none;
+    color: white;
+}
 .button:hover{
     background: linear-gradient(-135deg, #e83061, #f924a0);
     }

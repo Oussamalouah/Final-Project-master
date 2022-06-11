@@ -44,13 +44,50 @@ body{
     box-shadow: 0 0 15px rgb(111 124 139 / 15%) ;
     cursor: pointer;
 }
+
+.ironinput{
+    position: relative;
+    left:45rem;
+    top: 20px;
+    
+   }
+.bronzeinput{
+    position: relative;
+    left:45rem;
+    top: 20px;
+    
+}
+.silverinput{
+    position: relative;
+    left:45rem;
+    top: 20px;
+    
+   }
+   .goldinput{
+    position: relative;
+    left:45rem;
+    top: 20px;
+    
+   }
+   .platinput{
+    position: relative;
+    left:45rem;
+    top: 20px;
+    
+   }
+   .diaminput{
+    position: relative;
+    left:45rem;
+    top: 20px;
+    
+   }
 .iron p {
     position: relative;
     left:40px;
 }
 .iron img {
     position: relative;
-   left: 20px;
+   left:5px;
 }
 .quiz img{
     height: 90px;
@@ -80,7 +117,7 @@ body{
     width: 65px;
     position: relative;
     bottom: 12px;
-    left: 25px;
+    left: 10px;
 }
 .bronze p{
     position: relative;
@@ -103,7 +140,7 @@ body{
     width: 80px;
     position: relative;
     bottom: 20px;
-    left:18px;
+    left:5px;
 }
 .silver p{
     position: relative;
@@ -126,7 +163,7 @@ body{
     width: 170px;
     position: relative;
     bottom: 20px;
-    right:25px;
+    right:40px;
 }
 .gold p{
     position: relative;
@@ -149,7 +186,7 @@ body{
     width: 80px;
     position: relative;
     bottom: 20px;
-    left:22px;
+    left:5px;
 }
 .plat p{
     position: relative;
@@ -172,7 +209,7 @@ body{
     width: 85px;
     position: relative;
     bottom:25px;
-    left:20px;
+    left:5px;
 }
 .diam p{
     position: relative;
@@ -234,7 +271,7 @@ button:focus{
         box-shadow: 0px 0px 0px 0px red;
     }
 }
-#finish-btn{
+.finish-btn{
    border-radius: 5px;
    border: none;
    color: #fff;
@@ -248,4 +285,11 @@ button:focus{
    position: relative;
    right: 16.6rem;
    
+}
+.finish-btn a {
+    text-decoration: none;
+    color: white;
+}
+.finish-btn:hover{
+    background: linear-gradient(-135deg, #e83061, rgb(0, 0, 0));
 }

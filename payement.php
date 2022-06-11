@@ -130,7 +130,7 @@
             <label for="securitycode">Security Code</label>
             <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">
         </div>
-        <div class="btn"><button id ="start-btn"><b>Purchase</br></button></div>
+        <div class="btn"><button id ="start-btn"><b><a href ="congrat.php">Purchase</a></br></button></div>
     </div>
    
     <script><?php include("card.js")?></script> 

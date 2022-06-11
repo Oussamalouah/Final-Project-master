@@ -83,13 +83,6 @@ input {
 }
 
 /* CREDIT CARD IMAGE STYLING */
-.preload * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-}
-
 .container {
     width: 100%;
     max-width: 400px;
@@ -356,7 +349,7 @@ input {
 }
 #start-btn{
     height: 60px;
-    width:300px;
+    width:250px;
     box-shadow: 0 0 25px rgb(255 53 77 / 57%);
     opacity: .95;
     border: none;
@@ -373,6 +366,10 @@ input {
 .btn{
     margin-top:20px;
     position: relative;
-    left: 50px;
+    left:80px;
     
+}
+#start-btn a{
+ color: white;
+ text-decoration: none;
 }

@@ -29,7 +29,7 @@ if(isset($_POST['registerbtn'])){
 <body>
   <div class="container">
     <div class="title">ZEUSGUIDES</div>
-    <div class="sign-in">Do you have an account?  <a href ="">Sign In</a></div>
+    <div class="sign-in">Do you have an account?  <a href ="login.php">Sign In</a></div>
     <div class="content">
       <form  method ="post">
         <div class="user-details">

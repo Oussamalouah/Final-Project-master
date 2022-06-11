@@ -22,7 +22,7 @@
         <button class ="double"><b>Doublelift</br></button>
         <button class ="tenz"><b>Tenz</br></button>
         </div>
-        <div class="btn"><button  class ="button"><b>TRY PRO NOW</br></button></div>
+        <div class="btn"><button  class ="button"><b> <a href ="payement.php">TRY PRO NOW</a></br></button></div>
     </div>
 </body>
 </html>

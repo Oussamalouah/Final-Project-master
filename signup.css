@@ -96,6 +96,7 @@ form .input-box span.details{
    transition: all 0.3s ease;
    background: #E72150;
  }
+ 
  form .button input:hover{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #e83061, #f924a0);

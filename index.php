@@ -20,7 +20,7 @@
 <header> 
  <div class="navbar">
     <h1 ><a href="index.php">ZEUSGUIDES</a></h1>
-    <h2>LOG IN</h2>
+    <h2><a href="login.php">LOG IN</a></h2>
  </div>
 <!-- <img class="doublelift" src="doublelift.webp" alt=""> -->
 <div class="carousel">
@@ -42,7 +42,7 @@
       <h3>7X LCS CHAMPION</h3>
       <p><b>Learn how to master League of Legends from the most<br> accomplished pro in North America.</br></b></p>
    </div>
-   <div class="btn"><button id ="start-btn"><b>START RIGHT NOW</br></button></div>
+   <div class="btn"><button id ="start-btn"><b><a href="login.php">START RIGHT NOW</a></br></button></div>
 </header>
 <body>   
    <div class="sections">

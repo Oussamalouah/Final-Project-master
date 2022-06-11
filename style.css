@@ -36,6 +36,11 @@ h2{
     z-index: 1000;
     max-width:100px;
     
+    
+}
+h2 a {
+text-decoration: none;
+color: white;
 }
 
    
@@ -191,6 +196,11 @@ h2{
    bottom: 50px;
    
    
+}
+
+#start-btn a {
+text-decoration: none;
+color: white;
 }
 .btn{
    height:150px;

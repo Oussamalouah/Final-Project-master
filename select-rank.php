@@ -1,3 +1,16 @@
+<?php
+error_reporting(0);
+require 'connect.php';
+if(isset($_POST['finish'])){
+    $Niveau = $_POST['Niveau'];
+    if((isset($_POST['Niveau']))){
+        $sql="INSERT INTO `joueur`(`Niveau`) VALUES ('$Niveau')";
+        $result= mysqli_query($mysqli,$sql);
+}
+    }   
+    
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,28 +32,35 @@
  <div class="title"> 
      <h1>Select your<br> current rank</br></h1>
       <h3>We use this to create your plan </h3> 
+      <form action =""  method="post">
       <div class="quiz">
-        <div class="iron" tabindex="2">
+        <div class="iron"  tabindex="2">
+        <input type="radio"  class="ironinput" name="Niveau" value="Iron" />
             <img src="./img/iron.png" alt="">
             <p>Iron</p>
         </div>  
         <div class="bronze" tabindex="2">
+        <input type="radio"  class ="bronzeinput"  name="Niveau" value="Bronze" />
         <img src="./img/bronze.png" alt="">
             <p>Bronze</p>
         </div> 
         <div class="silver" tabindex="2">
+        <input type="radio"  class ="silverinput" name="Niveau" value="Silver" />
         <img src="./img/silver.png" alt="">
             <p>Silver</p>
         </div>  
         <div class="gold" tabindex="2">
+        <input type="radio"  class ="goldinput" name="Niveau" value="Gold" />
         <img src="./img/gold.png" alt="">
             <p>Gold</p>
         </div>  
         <div class="plat" tabindex="2">
+        <input type="radio"  class ="platinput" name="Niveau" value="Platinum" />
         <img src="./img/plat.png" alt="">
             <p>Platinum</p>
         </div>  
         <div class="diam" tabindex="2">
+        <input type="radio"  class ="diaminput" name="Niveau" value="Diamond" />
         <img src="./img/diam.png" alt="">
             <p >Diamond</p>
         </div>  
@@ -53,8 +73,10 @@
             <button type="button" value="IV">IV</button>
         </div>
          </div>
-         <button id ="finish-btn">FINISH</button>
+     </form>
+     <button class ="finish-btn" name="finish"> <a href ="membership.php">FINISH</a></button>
       </div> 
 </div>
+<script src="./radio.js"></script> 
 </body>
 </html>

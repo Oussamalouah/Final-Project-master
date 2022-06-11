@@ -14,6 +14,6 @@
         <h1>Welcome!</h1>
         <h2> The following quick quiz will help us<br> personalize your weekly training plan.</br></h2>
     </div>
-    <div class="btn"><button id ="start-btn"><b>START QUIZ</br></button></div>
+    <div class="button"><button class ="start-btn"><b><a href ="select-rank.php">START QUIZ </a></br></button></div>
 </body>
 </html>
