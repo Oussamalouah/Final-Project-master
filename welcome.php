@@ -1,18 +1,21 @@
 <?php
 session_start();
-error_reporting(0);
 require 'connect.php';
 if(!empty($_SESSION["IDJoueur"])){
-  header("location: welcome.php");
+    $IDJoueur = $_SESSION["IDJoueur"];
+    $result = mysqli_query($mysqli, "SELECT * FROM joueur WHERE IDJoueur = $IDJoueur");
+    $row = mysqli_fetch_assoc($result);
 }
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="welcome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -26,11 +29,16 @@ if(!empty($_SESSION["IDJoueur"])){
     <title>ZEUSGUIDES</title>
 </head>
 <header> 
- <div class="navbar">
-    <h1 ><a href="index.php">ZEUSGUIDES</a></h1>
-    <h2><a href="login.php">LOG IN</a></h2>
- </div>
-
+   <div class="navbar">
+            <h1 ><a href="index.php">ZEUSGUIDES</a></h1>
+            <button id ="logout"><a href = "logout.php">Logout</a></button>
+            
+   </div>
+   <div class="username">
+         <img  class ="avatar"src="./img/avatar.png" alt="">   
+      <p id ="username"> <?php echo $row["Nomutilisateur"] ;?></p>
+      
+   </div>
 <div class="carousel">
       <div class="carousel_inner">
          <div class="carousel_item carousel_item__active">
@@ -50,7 +58,7 @@ if(!empty($_SESSION["IDJoueur"])){
       <h3>7X LCS CHAMPION</h3>
       <p><b>Learn how to master League of Legends from the most<br> accomplished pro in North America.</br></b></p>
    </div>
-   <div class="btn"><button id ="start-btn"><b><a href="login.php">START RIGHT NOW</a></br></button></div>
+   <div class="btn"><button id ="start-btn"><b><a href="quiz.php">START RIGHT NOW</a></br></button></div>
 </header>
 <body>   
    <div class="sections">

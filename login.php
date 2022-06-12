@@ -3,7 +3,7 @@ error_reporting(0);
 session_start();
 require 'connect.php';
 if(!empty($_SESSION["IDJoueur"])){
-    header("location: index.php");
+    header("location: welcome.php");
 }
 if(isset($_POST["loginbtn"])){
  $email = $_POST['email'];
@@ -14,7 +14,7 @@ if(isset($_POST["loginbtn"])){
      if($Password == $row["Password"]){
        $_SESSION["login"] = true;
        $_SESSION["IDJoueur"] =$row["IDJoueur"];
-       header("location: index.php");
+       header("location: welcome.php");
      }
      else{
         echo

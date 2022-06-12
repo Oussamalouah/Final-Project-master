@@ -1,0 +1,496 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+   display: block;
+}
+
+
+header{
+    background-color: #070707;
+   
+}
+.navbar{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-family: 'Post No Bills Jaffna', sans-serif;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    
+}
+h2{
+    font-size:17px;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+    max-width:100px;
+    
+    
+}
+h2 a {
+text-decoration: none;
+color: white;
+}
+#username{
+    color:#F1F4FE;
+    z-index: 1000;
+    position: relative;
+    bottom:50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    
+}
+#logout a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+#logout{
+    background-color: #E72150;
+    border:  solid #E72150 ;
+    border-radius: 5px;
+    width:5rem;
+    z-index:1000;
+}
+.username{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right:130px;
+}
+.avatar{
+height: 40px;
+width: 40px;
+position: relative;
+right:25px;
+bottom:55px;
+cursor: pointer;
+z-index: 1000;
+}
+.avatar:hover{
+
+    animation: anim-shadow .3s forwards;
+}
+@keyframes anim-shadow{
+    50%{
+        box-shadow: 3px 3px 3px  #E72150;
+        border-radius:50%;
+    }
+    100%{
+        box-shadow: 3px 3px 3px  red;
+        border-radius:50%;
+    }
+}
+   
+:root{
+   font-family: "Raleway", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* carousel */
+.carousel_inner{
+   width: 100%;
+   z-index: 1000;
+}
+
+.carousel_inner::after{
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.carousel_item{
+   position: relative;
+   float: left;
+   display: none;
+   width: 100%;
+   margin-right: -100%;
+}
+
+/* slide effect */
+.carousel_item__active,
+.carousel_item__pos_next{
+   display: block;
+}
+
+.carousel_item__pos_next{
+   left: 100%;
+}
+
+.carousel_item__next{
+   transform: translateX(-100%);
+   transition: transform .5s ease-in-out;
+}
+
+/* fade effect */
+.carousel__fade .carousel_item__pos_next{
+   left: 0;
+   opacity: 0;
+}
+
+.carousel__fade .carousel_item__next{
+   transform: none;
+   opacity: 1;
+   transition: opacity .5s ease-in-out;
+}
+
+.carousel__fade .carousel_item__active.carousel_item__next{
+   opacity: 0;
+}
+
+/* carousel */
+.carousel_img{
+   display: block;
+   width: 50%;
+   position: relative;
+   left:30%;
+   bottom:120px;
+   z-index: 1000;
+    
+}
+
+.carousel_caption{
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   padding: 3rem 2.5rem;
+   text-align: center;
+   color: #fff;
+   z-index: 1;
+}
+
+.carousel_title{
+   font-family: "Montserrat", sans-serif;
+   font-weight: 600;
+}
+
+.carousel_description{
+   margin-top: .75rem;
+   line-height: 150%;
+}
+.info{
+   position: relative;
+   bottom:24rem;
+   left: 15%;
+   z-index:1000;
+   display: block;
+   width:100vh;
+   
+ 
+}
+.info h1{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 5px;
+    
+}
+.info h2{
+   font-family: 'Roboto', sans-serif;
+   font-size: 60px;
+}
+.info h3{
+   font-size:30px;
+   color:#9C9C9C;
+   position: relative;
+   top: 10px;
+}
+.info p{
+   font-size: 20px;
+   color: white;
+   position: relative;
+   top: 25px;
+   font-family: 'Roboto', sans-serif;
+}
+#start-btn{
+   height: 60px;
+   width: 400px;
+   box-shadow: 0 0 25px rgb(255 53 77 / 57%);
+   opacity: .95;
+   border: none;
+   background-color: #E72150;
+   border-radius: 5px;
+   color: white;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 20px;
+   cursor: pointer;
+   transition: all .2;
+   outline: none;
+   position: relative;
+   bottom: 50px;
+   
+   
+}
+
+#start-btn a {
+text-decoration: none;
+color: white;
+}
+.btn{
+   height:150px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap; 
+   align-items: center;
+  
+
+}
+.sections{
+   background-color:#F1F4FE;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   height:28rem;
+   
+}
+.coach-section{
+   display: flex;
+   
+}
+.coach-content{
+   display: flex;
+   flex-direction: column;
+   margin-top: 40px;
+   padding-left:50px;
+   
+}
+.coach-content h1{
+ color: black;
+ font-family: 'Roboto', sans-serif;
+ font-size: 40px;
+}
+.coach-content p{
+   font-family: 'Quicksand', sans-serif;
+   font-size:18px;
+   margin-top: 20px;
+   line-height:160%;
+   
+}
+#training-btn{
+   background-color: #E72150;
+   color: white;
+   border:  solid #E72150;
+   border-radius: 5px;
+   font-family: 'Quicksand', sans-serif;
+   height: 45px;
+   width: 65%;
+   margin-top:70px;
+}
+.trust-content{
+   display: flex;
+  
+}
+
+.elite-coaches{ 
+ display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 55px;
+margin-right:10rem;
+}
+.trust-pic{
+   margin-top: 55px;
+}
+
+.trust-pic h2{
+   color: black;
+   
+   
+}
+#stars{
+   margin-left: 20px;
+}
+.line{
+   height:50px;
+   width: 1px;
+   background-color: #9C9C9C;
+   margin-top: 50px;
+   margin-right: 8rem;
+   
+}
+.pro-section{
+   width:100%;
+
+}
+ #prop{
+   color: black;
+   font-size: 20px;
+   font-family: 'Quicksand', sans-serif;
+   text-align: center;
+   margin-left: 50px;
+   margin-top: 20px;
+}
+.pro-section{
+   display: flex;
+   align-items:center;
+   width:100%;
+   height: 25rem;
+   
+}
+.pros-pics{
+  width: 100%;
+  
+ 
+}
+.pros-pics img{
+   padding-left: 24rem;
+   margin-top: -50px;
+}
+.pros-names {
+   display: flex;
+   
+}
+.pros-names p{
+   padding-left:26.5rem;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 20px;
+   position: relative;
+   bottom:150px;
+   
+}
+#double{
+  position: relative;
+  right:30px;
+}
+#imp{
+   position: relative;
+  right:30px;
+}
+footer{
+   background-color: black;
+   display: flex;
+   height:20rem;
+  
+   
+}
+.youtube{
+   display: flex;
+
+}
+.youtube img{
+   height:30px;
+   width: 30px;
+   margin-top:25.5px;
+   margin-right: 10px;
+}
+.insta{
+   display: flex;
+
+}
+.insta img{
+   height:30px;
+   width: 30px;
+   margin-top:25.5px;
+   margin-right: 10px;
+}
+.twitter{
+   display: flex;
+
+}
+.twitter img{
+   height:30px;
+   width: 30px;
+   margin-top:25.5px;
+   margin-right: 10px;
+}
+.facebook{
+   display: flex;
+
+}
+.facebook img{
+   height:30px;
+   width: 30px;
+   margin-top:25.5px;
+   margin-right: 10px;
+}
+footer img{
+   height:60px;
+   width: 70px;
+   display: flex;
+
+}
+
+.icons{
+   position: relative;
+   top: 30px;
+}
+.icons img {
+   height: 20px;
+   width: 20px;
+   margin-top:10px;
+   
+}
+.company-info{
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   list-style: none;
+   padding-left:9rem;
+   margin-top: 20px;
+}
+footer li{
+ margin-top: 10px;
+}
+#Quicksand{
+   font-family: 'Quicksand', sans-serif; 
+   color: white;
+   position: relative;
+   top: 20px;
+}
+
+.games{
+   margin-top: 20px;
+   padding-left:35rem;
+}
+#games{
+   color: white;
+   list-style: none;
+}
+#lol{
+   color: white;
+   font-family: 'Quicksand', sans-serif; 
+   list-style: none;
+   padding-left:40px;
+   position: relative;
+   top: 20px;
+}
+#lolimg{
+   height: 20px;
+   width: 20px; 
+
+}
+.social{
+   margin-top: 20px;
+   padding-left: 30rem;
+}
+.social li{
+   color: white;
+   list-style: none;
+}
+#yt{
+   color: white;
+   padding-right: 20px;
+}

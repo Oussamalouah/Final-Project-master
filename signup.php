@@ -3,7 +3,7 @@ session_start();
 error_reporting(0);
 require 'connect.php';
 if(!empty($_SESSION["IDJoueur"])){
-  header("location: index.php");
+  header("location: welcome.php");
 }
 // INSERTING DATA INTO DATABASE
 if(isset($_POST['registerbtn'])){
