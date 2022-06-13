@@ -1,11 +1,12 @@
 <?php
 error_reporting(0);
+session_save_path();
 require 'connect.php';
 if(isset($_POST['finish'])){
     $Niveau = $_POST['Niveau'];
     $div1 = $_POST['div1'];
     $userId = $_SESSION['IDJoueur']; 
-    $sql = "UPDATE joueur SET Niveau=('$Niveau'),Divisions =('$div1')  WHERE IDJoueur";
+    $sql = "UPDATE joueur SET Niveau=('$Niveau'),Divisions =('$div1')  WHERE IDJoueur=IDJoueur";
      $result= mysqli_query($mysqli,$sql);
      
 
