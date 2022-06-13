@@ -11,10 +11,13 @@ if(isset($_POST['registerbtn'])){
     $email = $_POST['email'];
     $Password	= $_POST['Password'];
     $CompteDiscord = $_POST['CompteDiscord'];
+    $CoachID = '1';
+    $IDPack = '0';
+
 
     }
     if($_POST['Nomutilisateur']!="" and $_POST['email']!="" and $_POST['Password']!="" and $_POST['CompteDiscord']!="" ){
-    $sql="INSERT INTO `joueur` ( `Nomutilisateur`,`email`,`Password`,`CompteDiscord`) VALUES ( '$Nomutilisateur', '$email','$Password','$CompteDiscord')";
+    $sql="INSERT INTO `joueur` ( `Nomutilisateur`,`email`,`Password`,`CompteDiscord`,`CoachID`,`IDPack`) VALUES ( '$Nomutilisateur', '$email','$Password','$CompteDiscord','$CoachID','$IDPack')";
         $result= mysqli_query($mysqli,$sql);
         header("location: login.php");
       }

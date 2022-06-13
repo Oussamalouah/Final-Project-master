@@ -3,9 +3,11 @@
     padding: 0;
 }
 body{
-    background: linear-gradient(-135deg, #e83061, #f924a0);
+    background: black
     
 }
+
+
 .container{
     margin-top:15rem;
 }
@@ -26,6 +28,7 @@ h1{
     font-family: 'Roboto';
     text-align: center;
     font-size: 80px;
+    color: white;
 }
 .names {
     display: flex;
@@ -43,18 +46,46 @@ h1{
     border-radius: 5px;
     padding: 10px;
 }
+.coach1 input{
+    position: relative;
+    top:5rem;
+    right:80px;
+}
+.coach2{
+    position: relative;
+    right:4.5rem;
+}
+.coach2 input{
+    position: relative;
+    top:5rem;
+    right:12.5rem;
+}
+.coach3{
+    position: relative;
+    left: 9rem;
+    bottom:5.5rem;
+}
+.coach3 input{
+    position: relative;
+    top: 5rem;
+    left:10.4rem;
+}
 .tenz{
     position: relative;
-    left:5rem;
+    left:6rem;
 }
 .double{
     margin-right: 60px;
     position:relative;
-    right:15.5rem;
+    right:18.5rem;
+}
+.names input{
+    height: 30px;
+    width: 30px;
 }
 .imp{
     position: relative;
-    right:120px;
+    right:11.5rem;
 }
 .tenz:focus{
     color: rgb(255, 255, 255);
@@ -91,7 +122,7 @@ h1{
     width: 400px;
     opacity: .95;
     border: none;
-    background-color: #000000;
+    background-color: #E72150;
     border-radius: 5px;
     color: white    ;
     font-family: 'Quicksand', sans-serif;

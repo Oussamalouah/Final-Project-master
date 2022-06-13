@@ -4,7 +4,7 @@ require 'connect.php';
 if(isset($_POST['finish'])){
     $Niveau = $_POST['Niveau'];
     $div1 = $_POST['div1'];
-    $sql = "UPDATE joueur SET Niveau= ('$Niveau'),Divisions =('$div1')  WHERE IDJoueur=33";
+    $sql = "UPDATE joueur SET Niveau= ('$Niveau'),Divisions =('$div1')  WHERE IDJoueur=5";
     
      $result= mysqli_query($mysqli,$sql);
      

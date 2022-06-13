@@ -84,17 +84,17 @@ create table Estcomposer
 ALTER TABLE `Joueur`
   MODIFY `IDJoueur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
--- ALTER TABLE Joueur
--- ADD CoachID int not null;
--- ALTER TABLE Joueur
--- ADD FOREIGN KEY (CoachID)
--- REFERENCES Coaches (CoachID);
+ALTER TABLE Joueur
+ADD CoachID int not null;
+ALTER TABLE Joueur
+ADD FOREIGN KEY (CoachID)
+REFERENCES Coaches (CoachID);
 
--- ALTER TABLE Joueur
--- ADD IDPack int not null;
--- ALTER TABLE Joueur
--- ADD FOREIGN KEY (IDPack)
--- REFERENCES Pack (IDPack);
+ALTER TABLE Joueur
+ADD IDPack int not null;
+ALTER TABLE Joueur
+ADD FOREIGN KEY (IDPack)
+REFERENCES Pack (IDPack);
 
 
 
