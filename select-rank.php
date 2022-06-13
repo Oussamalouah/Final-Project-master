@@ -4,10 +4,11 @@ require 'connect.php';
 if(isset($_POST['finish'])){
     $Niveau = $_POST['Niveau'];
     $div1 = $_POST['div1'];
-    if($_POST['Niveau'] and $_POST['div1']){
-        $sql="INSERT INTO `joueur`(`Niveau`,`Divisions`) VALUES ('$Niveau',' $div1')";
-        $result= mysqli_query($mysqli,$sql);
-}
+    $sql = "UPDATE joueur SET Niveau= ('$Niveau'),Divisions =('$div1')  WHERE IDJoueur=33";
+    
+     $result= mysqli_query($mysqli,$sql);
+     
+
     }   
     
 
