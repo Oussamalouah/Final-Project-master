@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting();
 require 'connect.php';
 if(!empty($_SESSION["IDJoueur"])){
     $IDJoueur = $_SESSION["IDJoueur"];

@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+
 require 'connect.php';
 if(!empty($_SESSION["IDJoueur"])){
   header("location: welcome.php");
@@ -12,7 +12,7 @@ if(isset($_POST['registerbtn'])){
     $Password	= $_POST['Password'];
     $CompteDiscord = $_POST['CompteDiscord'];
     $CoachID = '1';
-    $IDPack = '0';
+    $IDPack = '11';
 
 
     }
@@ -25,11 +25,9 @@ if(isset($_POST['registerbtn'])){
 
 ?>
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <!---<title> Responsive Registration Form | CodingLab </title>--->
     <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
     <link rel="stylesheet" href="signup.css">
    </head>
