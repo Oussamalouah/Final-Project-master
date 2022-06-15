@@ -10,9 +10,17 @@
     font-size:100px;
     letter-spacing:20px;
 }
+.table{
+    margin-top:10rem;
+}
 
 body{
-   display:block;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+}
+.upbtn a {
+    color: white;
 }
 
 
@@ -39,13 +47,19 @@ body{
 }
 .edit{
     display: grid;
-    width:100%;
-    grid-area:mid;
+    width:30%;
     position: relative;
     top:100px;
-    padding:40px;
     left:20px;
+    height:40rem;
     
+}
+.inputs{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 #update{
     position: relative;
@@ -54,8 +68,8 @@ body{
 }
 .upbtn{
     text-decoration:solid;
-    border: solid blue;
-    background-color:blue;
+    border: solid #e83061;
+    background-color:#e83061;
     border-radius:5px;
     width:70px;
     height: 35px;
@@ -114,6 +128,7 @@ body{
       vertical-align: middle;
       white-space: nowrap;
       width: 100%;
+      margin-top:20px;
     }
     
     .button:after {

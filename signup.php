@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+error_reporting();
 require 'connect.php';
 if(!empty($_SESSION["IDJoueur"])){
   header("location: welcome.php");
@@ -12,7 +12,7 @@ if(isset($_POST['registerbtn'])){
     $Password	= $_POST['Password'];
     $CompteDiscord = $_POST['CompteDiscord'];
     $CoachID = '1';
-    $IDPack = '11';
+    $IDPack = '0';
 
 
     }

@@ -67,7 +67,7 @@ error_reporting(0);
             Edit
             </a></button> 
         
-          <button type="button"  name ="delete"class="btn btn-danger"><a href="delete.php? deleteid='.$IDJoueur.'"class ="text-light">
+          <button type="button"  class ="upbtn" name ="delete"class="btn btn-danger"><a href="delete.php? deleteid='.$IDJoueur.'"class ="text-light">
            Delete 
            </a></button>
         </td>
@@ -79,17 +79,9 @@ error_reporting(0);
 
     </tbody>
   </table>
+  
   </div>
-  <form  class ='edit'  method ="post">
-  <input type="text" name ="matricule" placeholder ="Enter your registration number">
-      <input type="text" name ="FirstName" placeholder ="Enter your name">
-      <input type="text" name ="LastName"placeholder ="Enter your LastName ">
-      <input type="date" name ="date" placeholder="Enter you date of birth  ">
-      <input type="text" name ="department"  placeholder ="Enter your department ">
-      <input type="text" name ="salary" placeholder =" Enter your salary" >
-      <input type="text" name ="function" placeholder =" Enter your function ">
-      <button type="submit" class ="button" name ="btn">Add</button>
-</form>
+  </div>
       </body>
       </html>
 

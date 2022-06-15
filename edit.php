@@ -1,6 +1,5 @@
 <?php  
 error_reporting(0);
-$IDJoueur =$_POST['IDJoueur'];
  $Nomutilisateur  =$_POST['Nomutilisateur'];
  $email = $_POST['email'];
  $Password = $_POST['Password'];
@@ -9,53 +8,66 @@ $IDJoueur =$_POST['IDJoueur'];
  $Divisions = $_POST['Divisions'];
  $CoachID = $_POST['CoachID'];
  $IDPack = $_POST['IDPack'];
-
+ 
     ?>
 <?php
 include 'connect.php';
 error_reporting(0);
 // INSERTING DATA INTO DATABASE
-$id =$_GET['editid'];
-$sql = "select * from `data` where id=$id";
+$IDJoueur =$_GET['editid'];
+$sql = "select * from `joueur` where IDJoueur= $IDJoueur";
 $result= mysqli_query($mysqli,$sql);
 $row = mysqli_fetch_assoc($result);
-$FirstName = $row['FirstName'];
- $LastName  = $row['LastName'];
- $matricule = $row['matricule'];
- $date = $row['date'];
- $department = $row['department'];
- $salary = $row['salary'];
- $function = $row['function'];
-//  $picture = $row['picture']['name'];
+$Nomutilisateur  = $row['Nomutilisateur'];
+$email = $row['email'];
+$Password = $row['Password'];
+$CompteDiscord = $row['CompteDiscord'];
+$Niveau = $row['Niveau'];
+$Divisions = $row['Divisions'];
+$CoachID = $row['CoachID'];
+$IDPack = $row['IDPack'];
+ 
+
 if(isset($_POST['btn'])){
-    $FirstName = $_POST['FirstName'];
-    $LastName  = $_POST['LastName'];
-    $matricule = $_POST['matricule'];
-    $date = $_POST['date'];
-    $department = $_POST['department'];
-    $salary = $_POST['salary'];
-    $function = $_POST['function'];
+  $Nomutilisateur  = $_POST['Nomutilisateur'];
+  $email = $_POST['email'];
+  $Password = $_POST['Password'];
+  $CompteDiscord = $_POST['CompteDiscord'];
+  $Niveau = $_POST['Niveau'];
+  $Divisions = $_POST['Divisions'];
+  $CoachID = $_POST['CoachID'];
+   $IDPack = $_POST['IDPack'];
+ 
+  
     }
   
-  if($_POST['FirstName']!="" and $_POST['LastName']!="" and $_POST['date']!="" and $_POST['department']!="" and $_POST['salary']!="" and $_POST['function']!="" and $_POST['matricule']!=""){
-    $sql="update  `data` set id=$id,FirstName= '$FirstName',LastName='$LastName',date='$date',department= '$department',salary='$salary',function='$function',matricule='$matricule'";
-    $result= mysqli_query($mysqli,$sql);
-    if($result){
-        header('location:php.php');
-    }else{
-        die(mysqli_error($mysqli));
+    if($_POST['Nomutilisateur']!="" and $_POST['email']!="" and $_POST['Password']!="" and $_POST['CompteDiscord']!="" and $_POST['Niveau']!="" and $_POST['Divisions']!="" and $_POST['CoachID']!="" and  $_POST['IDPack']!=""   ){
+      $sql="update `joueur` set IDJoueur=$IDJoueur ,Nomutilisateur= '$Nomutilisateur',email='$email',Password='$Password',CompteDiscord= '$CompteDiscord', Niveau ='$Niveau', Divisions='$Divisions',CoachID='$CoachID',IDPack='$IDPack'";
+      $result= mysqli_query($mysqli,$sql);
+      if($result){
+          header('location:ADMIN.php');
+      }else{
+          die(mysqli_error($mysqli));
+      }
     }
-  }
   
 ?>
 <link rel="stylesheet" href="ADMIN.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<div class=" inputs" >
 <form  class ='edit'  method ="post">
-<input type="text" name ="matricule"  value =<?php echo $matricule;?>>
-<input type="text" name ="FirstName" value =<?php echo $FirstName;?>>
-<input type="text" name ="LastName"value =<?php echo $LastName;?>>
-<input type="date" name ="date" value =<?php echo $date;?>>
-<input type="text" name ="department"  value =<?php echo $department;?>>
-<input type="text" name ="salary" value =<?php echo $salary;?>>
-<input type="text" name ="function" value =<?php echo $function;?>>
+<input type="text" name ="Nomutilisateur"  value =<?php echo $Nomutilisateur;?>>
+<input type="text" name ="email" value =<?php echo $email;?>>
+<input type="text" name ="Password"value =<?php echo $Password;?>>
+<input type="text" name ="CompteDiscord"  value =<?php echo $CompteDiscord;?>>
+<input type="text" name ="Niveau"  value =<?php echo $Niveau;?>>
+<input type="text" name ="Divisions"  value =<?php echo $Divisions;?>>
+<input type="text" name ="CoachID"  value =<?php echo $CoachID;?>>
+<input type="text" name ="IDPack"  value =<?php echo $IDPack;?>>
 <button type="submit" id ='update' name ="btn">Update</button>
+</div>
+</div>
+
+
+
+

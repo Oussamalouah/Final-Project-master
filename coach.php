@@ -3,7 +3,7 @@
 require 'connect.php';
 if(isset($_POST['finish'])){
     $coach = $_POST['coach'];
-    $sql = "UPDATE joueur SET CoachID= ('$coach')  WHERE IDJoueur=4";
+    $sql = "UPDATE joueur SET CoachID= ('$coach')  WHERE IDJoueur= IDJoueur";
     $result= mysqli_query($mysqli,$sql);
      
 
