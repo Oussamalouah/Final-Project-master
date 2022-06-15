@@ -21,11 +21,13 @@ header{
 h1 a{
     text-decoration: none;
     color: white;
+    z-index:1000;
 }
 h1{
     font-family: 'Post No Bills Jaffna', sans-serif;
     font-size:30px;
     color: rgb(255, 255, 255);
+    z-index:1000;
     
 }
 h2{
@@ -162,7 +164,7 @@ z-index: 1000;
    position: relative;
    left:30%;
    bottom:120px;
-   z-index: 1000;
+   
     
 }
 
@@ -178,7 +180,7 @@ z-index: 1000;
    padding: 3rem 2.5rem;
    text-align: center;
    color: #fff;
-   z-index: 1;
+  
 }
 
 .carousel_title{
@@ -494,3 +496,129 @@ footer li{
    color: white;
    padding-right: 20px;
 }
+@media only screen and  (max-width:1300px) {
+    h1 a {
+      font-size: 20px;
+   }
+   #username{
+      color:#F1F4FE;
+      z-index: 1000;
+      position: relative;
+      bottom:50px;
+      font-family: 'Roboto', sans-serif;
+      font-size:15px;
+      
+  }
+  #logout a {
+      text-decoration: none;
+      color: white;
+      font-family: 'Quicksand', sans-serif;
+  }
+  #logout{
+      background-color: #E72150;
+      border:  solid #E72150 ;
+      border-radius: 5px;
+      width:5rem;
+      z-index:1000;
+  }
+  .username{
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      right:130px;
+  }
+  .avatar{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  right:25px;
+  bottom:55px;
+  cursor: pointer;
+  z-index: 1000;
+  }
+
+ }
+ @media only screen and  (max-width:1200px) {
+   .carousel_img{
+      display: block;
+      width:50%;
+      position: relative;
+      left:30%;
+      bottom:120px;
+   
+       
+   }
+
+   }
+   @media only screen and  (max-width:700px) {
+      h1 a {
+         font-size: 20px;
+         z-index:1000;
+      }
+      .carousel_img{
+         display: block;
+         width:100%;
+         position: relative;
+          left:1rem;
+         bottom:120px;
+      
+          
+      }
+      .info{
+         position: relative;
+         bottom:5rem;
+         left: 15%;
+         z-index:1000;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         width:50vh;
+   }
+   .info h1{
+      color: red;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size:15px;
+      
+      
+  }
+  .info h2{
+     font-family: 'Roboto', sans-serif;
+     font-size:30px;
+     position: relative;
+     left:30%;
+  }
+  .info h3{
+     font-size:20px;
+     color:#9C9C9C;
+     
+     
+  }
+  .info p{
+     font-size:15px;
+     color: white;
+     font-family: 'Roboto', sans-serif;
+  }
+  #start-btn{
+   height: 60px;
+   width: 90%;
+   box-shadow: 0 0 25px rgb(255 53 77 / 57%);
+   opacity: .95;
+   border: none;
+   background-color: #E72150;
+   border-radius: 5px;
+   color: white;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 20px;
+   cursor: pointer;
+   transition: all .2;
+   outline: none;
+   position: relative;
+   bottom: 10px;
+   
+   
+}
+      
+}
+   
