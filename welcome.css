@@ -7,7 +7,7 @@ html{
 }
 
 
-header{
+.header{
     background-color: #070707;
    
 }
@@ -18,6 +18,8 @@ header{
     
     
 }
+
+
 h1 a{
     text-decoration: none;
     color: white;
@@ -348,40 +350,39 @@ margin-right:10rem;
 }
 .pro-section{
    display: flex;
-   align-items:center;
+   flex-direction: row;
+   justify-content: center;
+   margin-top:100px;
+   position: relative;
+   top:30px;
    width:100%;
    height: 25rem;
+   justify-content: space-evenly;
    
-}
-.pros-pics{
-  width: 100%;
-  
- 
-}
-.pros-pics img{
-   padding-left: 24rem;
-   margin-top: -50px;
-}
-.pros-names {
-   display: flex;
-   
-}
-.pros-names p{
-   padding-left:26.5rem;
-   font-family: 'Quicksand', sans-serif;
-   font-size: 20px;
-   position: relative;
-   bottom:150px;
-   
-}
-#double{
-  position: relative;
-  right:30px;
 }
 #imp{
    position: relative;
-  right:30px;
+   left: 5px;
+   font-family: 'Quicksand';
+   margin-top: 10px;
+   font-size:25px;
 }
+#double{
+   position: relative;
+   left: 20px;
+   font-family: 'Quicksand';
+   margin-top: 10px;
+   font-size:25px;
+}
+#tenz{
+   position: relative;
+   left:45px;
+   font-family: 'Quicksand';
+   margin-top: 10px;
+   font-size:25px;
+}
+
+
 footer{
    background-color: black;
    display: flex;
@@ -536,20 +537,227 @@ footer li{
   cursor: pointer;
   z-index: 1000;
   }
+  .info{
+   position: relative;
+   bottom:15rem;
+   left: 15%;
+   z-index:1000;
+   width:50vh;
+}
 
  }
  @media only screen and  (max-width:1200px) {
    .carousel_img{
       display: block;
-      width:50%;
+      width:60%;
       position: relative;
       left:30%;
       bottom:120px;
+   }
+   .info  {
+   position: relative;
+   bottom:20rem;
+   left: 15%;
+   z-index:1000;
+   
+}
+.info h1 {
+   font-size: 15px;
+}
+.info h2{
+   font-size: 30px;
+}
+.info h3{
+   font-size: 20px;
+}
+.info p{
+   font-size: 15px
+}
+
    
        
    }
+@media only screen and  (max-width:800px) {
+
+   .sections{
+      background-color:#F1F4FE;
+      display: block;
+      align-items:center;
+      height:35rem;
+      
+   }
+   .coach-section{
+      display: block;
+      
+   }
+   .coach-section img{
+      width: 50%;
+      position: relative;
+      left: 23%;
+   }
+   .coach-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      
+   }
+   .coach-content h1{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+    position: relative;
+    right:30px;
+    
+   }
+   .coach-content p{
+      font-family: 'Quicksand', sans-serif;
+      font-size:15px;
+      margin-top: 20px;
+      line-height:160%;
+      position: relative;
+      right:30px;
+   }
+   #training-btn{
+      background-color: #E72150;
+      color: white;
+      border:  solid #E72150;
+      border-radius: 5px;
+      font-family: 'Quicksand', sans-serif;
+      height: 45px;
+      width: 65%;
+      position: relative;
+      left: 80px;
+      bottom:3rem;
+    
+   }
+   .trust-content{
+      display: flex;
+     
+   }
+   
+   .elite-coaches{ 
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   bottom: 5rem;
+   left: 50px;
+   font-size: 15px;
+   
+   }
+   .line{
+      position: relative;
+      bottom: 5rem;
+      right: 20px;
+   }
+   
+   .trust-pic{
+      position: relative;
+      bottom: 5rem;
+      right:50px;
+   }
+   
+   .trust-pic p{
+      color: black;
+      font-size:15px;
+      
+      
+   }
+ 
 
    }
+   @media only screen and  (max-width:550px) {
+      .sections{
+         background-color:#F1F4FE;
+         display: block;
+         align-items:center;
+         height:45rem;
+         
+      }
+      .coach-section{
+         display: block;
+         
+      }
+      .coach-section img{
+         width:70%;
+         position: relative;
+         left:15%;
+      }
+      .coach-content{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+         
+      }
+      .coach-content h1{
+       color: black;
+       font-family: 'Roboto', sans-serif;
+       font-size:30px;
+       position: relative;
+       right:30px;
+       
+      }
+      .coach-content p{
+         font-family: 'Quicksand', sans-serif;
+         font-size:15px;
+         margin-top: 20px;
+         line-height:160%;
+         position: relative;
+         right:30px;
+      }
+      #training-btn{
+         background-color: #E72150;
+         color: white;
+         border:  solid #E72150;
+         border-radius: 5px;
+         font-family: 'Quicksand', sans-serif;
+         height: 45px;
+         width: 65%;
+         position: relative;
+         left: 65px;
+         bottom:3rem;
+       
+      }
+      .trust-content{
+         display:flex;
+         flex-direction: column;
+         justify-content: center;
+        
+      }
+      
+      .elite-coaches{ 
+       display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      bottom: 5rem;
+      left:75px;
+      font-size: 15px;
+      
+      }
+      .line{
+        display: none;
+      }
+      
+      .trust-pic{
+         position: relative;
+         left: 12rem;
+       
+         
+      }
+      
+      .trust-pic p{
+         color: black;
+         font-size:15px;
+         
+         
+      }
+    
+   }
+
+
    @media only screen and  (max-width:700px) {
       h1 a {
          font-size: 20px;
@@ -619,6 +827,223 @@ footer li{
    
    
 }
+
       
+}
+@media only screen and  (max-width:550px) {
+   .info{
+      position: relative;
+      bottom:5rem;
+      left: 5%;
+      z-index:1000;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width:50vh;
+}
+#logout{
+   background-color: #E72150;
+   border:  solid #E72150 ;
+   border-radius: 5px;
+   width:3rem;
+   height: 2rem;
+   z-index:1000;
+}
+.username{
+   display: flex;
+   justify-content: flex-end;
+   position: relative;
+   right:80px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.avatar{
+height: 25px;
+width: 25px;
+position: relative;
+right:10px;
+bottom:55px;
+cursor: pointer;
+z-index: 1000;
+}
+
+}
+@media only screen and  (max-width:450px) {
+   .info{
+      position: relative;
+      bottom:5rem;
+      left: 1%;
+      z-index:1000;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width:50vh;
+}
+#logout{
+   background-color: #E72150;
+   border:  solid #E72150 ;
+   border-radius: 5px;
+   width:2.5rem;
+   height: 1.5rem;
+   z-index:1000;
+}
+#logout a {
+   font-size: 9px;
+}
+.username{
+   display: flex;
+   justify-content: flex-end;
+   position: relative;
+   right:80px;
+   font-family: 'Roboto', sans-serif;
+}
+#training-btn{
+   background-color: #E72150;
+   color: white;
+   border:  solid #E72150;
+   border-radius: 5px;
+   font-family: 'Quicksand', sans-serif;
+   height: 45px;
+   width: 65%;
+   position: relative;
+   left:45px;
+   bottom:3rem;
+ 
+}
+.trust-content{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+  
+}
+
+.elite-coaches{ 
+ display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+bottom: 5rem;
+left:75px;
+font-size: 15px;
+
+}
+.line{
+  display: none;
+}
+
+.trust-pic{
+   position: relative;
+   left:9rem;
+ 
+   
+}
+
+.trust-pic p{
+   color: black;
+   font-size:15px;
+   
+   
+}
+
+}
+@media only screen and  (max-width:350px) {
+   .info{
+     
+      bottom:5rem;
+      left: -60px;
+      z-index:1000;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width:50vh;
+}
+.info h1 {
+   font-size: 8px;
+   position: relative;
+   right: 10px;
+
+
+}
+.info h2 {
+   font-size: 20px;
+  position: relative;
+ left:150px;
+}
+.info h3{
+   font-size: 14px;
+   position: relative;
+   right: 15px;
+}
+.info p{
+   font-size:10px;
+   position: relative;
+   right:10px;
+}
+#logout{
+   background-color: #E72150;
+   border:  solid #E72150 ;
+   border-radius: 5px;
+   width:2.5rem;
+   height: 1.5rem;
+   z-index:1000;
+   position: relative;
+   top: 10px;
+}
+#username{
+font-size:10px;
+position: relative;
+left: 10px;
+top: -45px;
+
+}
+.avatar{
+   display: none;
+}
+#training-btn{
+   background-color: #E72150;
+   color: white;
+   border:  solid #E72150;
+   border-radius: 5px;
+   font-family: 'Quicksand', sans-serif;
+   height: 45px;
+   width: 65%;
+   position: relative;
+   left:25px;
+   bottom:3rem;
+ 
+}
+.trust-content{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+  
+}
+
+.elite-coaches{ 
+ display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+bottom: 5rem;
+left:75px;
+font-size: 13px;
+
+}
+.line{
+  display: none;
+}
+.trust-pic p{
+   font-size:10px;
+   position: relative;
+   left: 25px;
+
+}
+.trust-pic{
+   position: relative;
+   left:6rem;
+   
+ 
+   
+}
 }
    

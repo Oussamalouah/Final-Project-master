@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting();
+error_reporting(0);
 require 'connect.php';
 if(!empty($_SESSION["IDJoueur"])){
     $IDJoueur = $_SESSION["IDJoueur"];
@@ -29,7 +29,8 @@ if(!empty($_SESSION["IDJoueur"])){
    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <title>ZEUSGUIDES</title>
 </head>
-<header> 
+<div class ="header"> 
+
    <div class="navbar">
             <h1 ><a href="index.php">ZEUSGUIDES</a></h1>
             <button id ="logout"><a href = "logout.php">Logout</a></button>
@@ -40,6 +41,7 @@ if(!empty($_SESSION["IDJoueur"])){
       <p id ="username"> <?php echo $row["Nomutilisateur"] ;?></p>
       
    </div>
+   
 <div class="carousel">
       <div class="carousel_inner">
          <div class="carousel_item carousel_item__active">
@@ -60,7 +62,7 @@ if(!empty($_SESSION["IDJoueur"])){
       <p><b>Learn how to master League of Legends from the most<br> accomplished pro in North America.</br></b></p>
    </div>
    <div class="btn"><button id ="start-btn"><b><a href="quiz.php">START RIGHT NOW</a></br></button></div>
-</header>
+</div>
 <body>   
    <div class="sections">
       <div class="coach-section">
@@ -85,17 +87,19 @@ if(!empty($_SESSION["IDJoueur"])){
    </div>
    <p id ="prop">Our Professional Players</p>
    <div class="pro-section">
-         <div class="pros-pics">
+      <div class="imp">
             <img src="./img/Imperialhal.png" alt="">
+            <p id="imp">Imperialhal</p>
+         </div>
+         <div class ="double">
             <img src="./img/doublelift.png" alt="">
-            <img src="./img/tenz.png" alt="">
+            <p id ='double'>Doublelift</p>
          </div>
+            <div class ="tenz">
+               <img src="./img/tenz.png" alt="">
+               <p id='tenz'>Tenz</p>
+            </div>
       </div>
-      <div class="pros-names">
-           <p id="imp">Imperialhal</p>
-           <p id ='double'>Doublelift</p>
-           <p id='tenz'>Tenz</p>
-         </div>
    <footer>
             <img src="./img/logo.png" alt="">
             <div class="company-info">

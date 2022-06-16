@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting();
+error_reporting(0);
 require 'connect.php';
 if(!empty($_SESSION["IDJoueur"])){
   header("location: welcome.php");
