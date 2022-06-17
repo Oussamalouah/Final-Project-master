@@ -994,6 +994,13 @@ z-index: 1000;
 }
 
 }
+@media only screen and  (max-width:480px) {
+.info{
+   position: relative;
+   left: -5px;
+}
+
+}
 @media only screen and  (max-width:450px) {
    .info{
       position: relative;
