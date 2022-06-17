@@ -101,7 +101,7 @@ if(!empty($_SESSION["IDJoueur"])){
             </div>
       </div>
    <footer>
-            <img src="./img/logo.png" alt="">
+            <img id ="zlogo" src="./img/logo.png" alt="">
             <div class="company-info">
                <li>COMPANY INFO</li>
                <li id="Quicksand">Pricing</li>
@@ -114,7 +114,7 @@ if(!empty($_SESSION["IDJoueur"])){
               <img id ="lolimg"src="./img/logolol.png" alt="">
            </div>
            <div class="social">
-               <li>Social</li>
+               <li id ="social">Social</li>
                <div class="youtube">
                <img src="./img/yt.png" alt="">
                <li id="Quicksand">Youtube</li>
@@ -131,8 +131,6 @@ if(!empty($_SESSION["IDJoueur"])){
               <img src="./img/facebook.png" alt="">
               <li id="Quicksand">Facebook</li>
               </div>   
-           </div>
-           <div>
            </div>
    </footer>
    <script src="./script.js"></script> 
