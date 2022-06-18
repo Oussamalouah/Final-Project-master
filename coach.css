@@ -32,13 +32,8 @@ h1{
     font-size: 80px;
     color: white;
 }
-.names {
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
-    justify-content:space-evenly;
-   
-}
+
+
 .names button {
     font-size:30px;
     font-family:"Quicksand";
@@ -158,6 +153,43 @@ h1{
 }
 .btn button a:hover{
     color: black;
+}
+@media only screen and  (max-width:1100px) {
+    .names{
+        display:grid;
+        
+        
+    }
+    .coach1{
+        display:grid;
+        position: relative;
+        right:0;
+        top:-10rem;
+        
+    }
+
+    .coach2{
+        display:grid;
+        position: relative;
+        right:10px;
+        top:-5rem;
+    }
+    
+    .coach3{
+        display:grid;
+        position: relative;
+        left:-15px;
+        bottom:0;
+    }
+    .coach3 input {
+        position: relative;
+        left: 45%;
+        margin-top: 20px;
+        height: 30px;
+        width: 30px;
+    }
+    
+
 }
 
 

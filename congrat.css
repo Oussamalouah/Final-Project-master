@@ -2,9 +2,12 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background:linear-gradient(-135deg, #ff003c, #f6426c)
+}
 h1{
     font-size: 80px;
-    color:#E72150;
+    color:#ffffff;
     text-align: center;
     font-family:"Roboto";
 }
@@ -17,13 +20,13 @@ h2{
 }
 h3{
     font-size: 40px;
-    color:#000000;
+    color:black;
     text-align: center;
     font-family:"Roboto";
     margin-top:60px;
 }
 span{
-    color: #E72150;
+    color: #ffffff;
 }
 .title{
     margin-top: 50px;
