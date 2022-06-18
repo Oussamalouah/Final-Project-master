@@ -1,4 +1,10 @@
-
+<?php
+session_start();
+require 'connect.php';
+if(empty($_SESSION["IDJoueur"])){
+    header("location: index.php");
+  }
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

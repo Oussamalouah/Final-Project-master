@@ -301,3 +301,132 @@ button:focus{
 .finish-btn:hover{
     background: linear-gradient(-135deg, #e83061, rgb(0, 0, 0));
 }
+@media only screen and  (max-width:1400px) {
+.title{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+.quiz{
+    display: grid;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom:0rem;
+    left:0rem;
+    margin-top:40px;
+    justify-content: center;
+    
+    
+}
+.title h1{
+    font-size:80px;
+    position: relative;
+    top:20px;
+    font-style:none;
+}
+.title h3{
+    font-size:25px;
+    position: relative;
+    top:20px;
+}
+.finish-btn{
+    padding:20px;
+   position: relative;
+   width: 100%;
+   right:0rem;
+   top:20px;
+}
+.buttons input {
+    position: relative;
+    right: 45px;
+}
+
+}
+@media only screen and  (max-width:800px) {
+.title{
+    width: 100%;
+}
+.quiz {
+    display: block;
+    width:auto;
+    
+   
+}
+.iron{
+    width: auto;
+    padding:auto;
+   
+    
+}
+.bronze{
+    width: auto;
+}
+.silver{
+    width: auto;
+}
+.gold{
+    width: auto;
+}
+.plat{
+    width: auto;
+}
+.diam{
+    width: auto;
+}
+.division {
+    display: flex;
+    padding:auto;
+    width:100%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.iron input{
+    position: relative;
+    left:90%;
+    top:100%;
+    
+}
+.bronze input{
+    position: relative;
+    left:90%;
+    top:100%;
+    
+}
+.silver input{
+    position: relative;
+    left:90%;
+    top:100%;
+    
+}
+.gold input{
+    position: relative;
+    left:90%;
+    top:100%;
+    
+}
+.plat input{
+    position: relative;
+    left:90%;
+    top:100%;
+    
+}
+.diam input{
+    position: relative;
+    left:90%;
+    top:100%;
+    
+}
+.buttons input {
+    position: relative;
+    top:70px;
+    right:45%;
+}
+}
+@media only screen and  (max-width:500px) {
+    .buttons input {
+        position: relative;
+        top:20px;
+        right:10%;
+    }
+}

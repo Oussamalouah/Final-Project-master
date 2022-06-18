@@ -1,5 +1,9 @@
 <?php
-
+session_start();
+require 'connect.php';
+if(empty($_SESSION["IDJoueur"])){
+    header("location: index.php");
+  }
 require 'connect.php';
 if(isset($_POST['finish'])){
     $coach = $_POST['coach'];

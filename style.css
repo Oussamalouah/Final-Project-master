@@ -26,6 +26,7 @@ h1{
     font-family: 'Post No Bills Jaffna', sans-serif;
     font-size:30px;
     color: rgb(255, 255, 255);
+    z-index: 1000;
     
 }
 h2{
@@ -298,39 +299,36 @@ margin-right:10rem;
 }
 .pro-section{
    display: flex;
-   align-items:center;
+   flex-direction: row;
+   justify-content: center;
+   margin-top:100px;
+   position: relative;
+   top:30px;
    width:100%;
    height: 25rem;
+   justify-content: space-evenly;
    
-}
-.pros-pics{
-  width: 100%;
-  
- 
-}
-.pros-pics img{
-   padding-left: 24rem;
-   margin-top: -50px;
-}
-.pros-names {
-   display: flex;
-   
-}
-.pros-names p{
-   padding-left:26.5rem;
-   font-family: 'Quicksand', sans-serif;
-   font-size: 20px;
-   position: relative;
-   bottom:150px;
-   
-}
-#double{
-  position: relative;
-  right:30px;
 }
 #imp{
    position: relative;
-  right:30px;
+   left: 5px;
+   font-family: 'Quicksand';
+   margin-top: 10px;
+   font-size:25px;
+}
+#double{
+   position: relative;
+   left:10px;
+   font-family: 'Quicksand';
+   margin-top: 10px;
+   font-size:25px;
+}
+#tenz{
+   position: relative;
+   left:45px;
+   font-family: 'Quicksand';
+   margin-top: 10px;
+   font-size:25px;
 }
 footer{
    background-color: black;
@@ -445,5 +443,689 @@ footer li{
    color: white;
    padding-right: 20px;
 }
+@media only screen and  (max-width:1300px) {
+   h1 a {
+     font-size: 20px;
+  }
+  #username{
+     color:#F1F4FE;
+     z-index: 1000;
+     position: relative;
+     bottom:50px;
+     font-family: 'Roboto', sans-serif;
+     font-size:15px;
+     
+ }
+ #logout a {
+     text-decoration: none;
+     color: white;
+     font-family: 'Quicksand', sans-serif;
+ }
+ #logout{
+     background-color: #E72150;
+     border:  solid #E72150 ;
+     border-radius: 5px;
+     width:5rem;
+     z-index:1000;
+ }
+ .username{
+     display: flex;
+     justify-content: flex-end;
+     position: relative;
+     right:130px;
+ }
+ .avatar{
+ height: 40px;
+ width: 40px;
+ position: relative;
+ right:25px;
+ bottom:55px;
+ cursor: pointer;
+ z-index: 1000;
+ }
+ .info{
+  position: relative;
+  bottom:15rem;
+  left: 15%;
+  z-index:1000;
+  width:50vh;
+}
+footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:40rem;
+ 
+  
+}
+#zlogo{
+  height:80px;
+  width: 80px;
+}
+
+.icons img {
+  height: 20px;
+  width: 20px;
+  margin-top:10px;
+  
+}
+.company-info{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  bottom: 7rem;
+  font-size:20px;
+  margin-right:10rem;
+}
+footer li{
+margin-top: 10px;
+}
+#Quicksand{
+  font-family: 'Quicksand', sans-serif; 
+  color: white;
+  position: relative;
+  top: 20px;
+}
+.social{
+  display:grid;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding-left: 0px;
+ 
+}
+
+#social{
+  font-size: 20px;
+}
+#lol {
+  display: none;
+}
+#games{
+  display: none;
+}
+#lolimg{
+  display: none;
+}
+
+.youtube{
+  width: 30%;
+}
+.insta{
+  width: 30%;
+}
+.twitter{
+  width: 30%;
+}
+.facebook{
+  width: 30%;
+}
+
 
 }
+@media only screen and  (max-width:1200px) {
+  .carousel_img{
+     display: block;
+     width:60%;
+     position: relative;
+     left:30%;
+     bottom:120px;
+  }
+  .info  {
+  position: relative;
+  bottom:20rem;
+  left: 15%;
+  z-index:1000;
+  
+}
+.info h1 {
+  font-size: 15px;
+}
+.info h2{
+  font-size: 30px;
+}
+.info h3{
+  font-size: 20px;
+}
+.info p{
+  font-size: 15px
+}
+
+  
+      
+  }
+@media only screen and  (max-width:800px) {
+
+  .sections{
+     background-color:#F1F4FE;
+     display: block;
+     align-items:center;
+     height:35rem;
+     
+  }
+  .coach-section{
+     display: block;
+     
+  }
+  .coach-section img{
+     width: 50%;
+     position: relative;
+     left: 23%;
+  }
+  .coach-content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     
+  }
+  .coach-content h1{
+   color: black;
+   font-family: 'Roboto', sans-serif;
+   font-size:30px;
+   position: relative;
+   right:30px;
+   
+  }
+  .coach-content p{
+     font-family: 'Quicksand', sans-serif;
+     font-size:15px;
+     margin-top: 20px;
+     line-height:160%;
+     position: relative;
+     right:30px;
+  }
+  #training-btn{
+     background-color: #E72150;
+     color: white;
+     border:  solid #E72150;
+     border-radius: 5px;
+     font-family: 'Quicksand', sans-serif;
+     height: 45px;
+     width: 65%;
+     position: relative;
+     left: 80px;
+     bottom:3rem;
+   
+  }
+  .trust-content{
+     display: flex;
+    
+  }
+  
+  .elite-coaches{ 
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 5rem;
+  left: 50px;
+  font-size: 15px;
+  
+  }
+  .line{
+     position: relative;
+     bottom: 5rem;
+     right: 20px;
+  }
+  
+  .trust-pic{
+     position: relative;
+     bottom: 5rem;
+     right:50px;
+  }
+  
+  .trust-pic p{
+     color: black;
+     font-size:15px;
+     
+     
+  }
+
+
+  }
+  @media only screen and  (max-width:550px) {
+     .sections{
+        background-color:#F1F4FE;
+        display: block;
+        align-items:center;
+        height:45rem;
+        
+     }
+     .coach-section{
+        display: block;
+        
+     }
+     .coach-section img{
+        width:70%;
+        position: relative;
+        left:15%;
+     }
+     .coach-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+     }
+     .coach-content h1{
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-size:30px;
+      position: relative;
+      right:30px;
+      
+     }
+     .coach-content p{
+        font-family: 'Quicksand', sans-serif;
+        font-size:15px;
+        margin-top: 20px;
+        line-height:160%;
+        position: relative;
+        right:30px;
+     }
+     #training-btn{
+        background-color: #E72150;
+        color: white;
+        border:  solid #E72150;
+        border-radius: 5px;
+        font-family: 'Quicksand', sans-serif;
+        height: 45px;
+        width: 65%;
+        position: relative;
+        left: 65px;
+        bottom:3rem;
+      
+     }
+     .trust-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+       
+     }
+     
+     .elite-coaches{ 
+      display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     bottom: 5rem;
+     left:75px;
+     font-size: 15px;
+     
+     }
+     .line{
+       display: none;
+     }
+     
+     .trust-pic{
+        position: relative;
+        left: 12rem;
+      
+        
+     }
+     
+     .trust-pic p{
+        color: black;
+        font-size:15px;
+        
+        
+     }
+   
+  }
+
+
+  @media only screen and  (max-width:700px) {
+     h1 a {
+        font-size: 20px;
+        z-index:1000;
+     }
+     .carousel_img{
+        display: block;
+        width:100%;
+        position: relative;
+         left:1rem;
+        bottom:120px;
+     
+         
+     }
+     .info{
+        position: relative;
+        bottom:5rem;
+        left: 15%;
+        z-index:1000;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width:50vh;
+  }
+  .info h1{
+     color: red;
+     font-family: 'Roboto', sans-serif;
+     font-style: normal;
+     font-weight: 700;
+     font-size:15px;
+     
+     
+ }
+ .info h2{
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+    position: relative;
+    left:30%;
+ }
+ .info h3{
+    font-size:20px;
+    color:#9C9C9C;
+    
+    
+ }
+ .info p{
+    font-size:15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+ }
+ #start-btn{
+  height: 60px;
+  width: 90%;
+  box-shadow: 0 0 25px rgb(255 53 77 / 57%);
+  opacity: .95;
+  border: none;
+  background-color: #E72150;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .2;
+  outline: none;
+  position: relative;
+  bottom: 10px;
+  
+}
+.pro-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+  height:40rem;
+ 
+  
+}
+.imp{
+  text-align: center;
+  position: relative;
+  bottom:150px;
+  
+}
+.imp img {
+  height: 110px;
+  width: 110px;
+}
+#imp  {
+  font-size: 15px;
+}
+.double{
+  text-align: center;
+  position: relative;
+  bottom:100px;
+}
+.double img {
+  height: 110px;
+  width: 110px;
+}
+#double {
+  font-size: 15px;
+  position: relative;
+  left:-2px;
+}
+.tenz{
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+  
+}
+.tenz img {
+  height: 110px;
+  width: 110px;
+}
+#tenz {
+  font-size: 15px;
+  position: relative;
+  left: -5px;
+}
+
+     
+}
+@media only screen and  (max-width:550px) {
+  .info{
+     position: relative;
+     bottom:5rem;
+     left: 5%;
+     z-index:1000;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     width:50vh;
+}
+#logout{
+  background-color: #E72150;
+  border:  solid #E72150 ;
+  border-radius: 5px;
+  width:3rem;
+  height: 2rem;
+  z-index:1000;
+}
+.username{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right:80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.avatar{
+height: 25px;
+width: 25px;
+position: relative;
+right:10px;
+bottom:55px;
+cursor: pointer;
+z-index: 1000;
+}
+
+}
+@media only screen and  (max-width:480px) {
+.info{
+  position: relative;
+  left: -5px;
+}
+
+}
+@media only screen and  (max-width:450px) {
+  .info{
+     position: relative;
+     bottom:5rem;
+     left: 1%;
+     z-index:1000;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     width:50vh;
+}
+#logout{
+  background-color: #E72150;
+  border:  solid #E72150 ;
+  border-radius: 5px;
+  width:2.5rem;
+  height: 1.5rem;
+  z-index:1000;
+}
+#logout a {
+  font-size: 9px;
+}
+.username{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right:80px;
+  font-family: 'Roboto', sans-serif;
+}
+#training-btn{
+  background-color: #E72150;
+  color: white;
+  border:  solid #E72150;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  height: 45px;
+  width: 65%;
+  position: relative;
+  left:45px;
+  bottom:3rem;
+
+}
+.trust-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.elite-coaches{ 
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+bottom: 5rem;
+left:75px;
+font-size: 15px;
+
+}
+.line{
+ display: none;
+}
+
+.trust-pic{
+  position: relative;
+  left:9rem;
+
+  
+}
+
+.trust-pic p{
+  color: black;
+  font-size:15px;
+  
+  
+}
+.company-info{
+  font-size: 15px;
+}
+
+}
+@media only screen and  (max-width:350px) {
+  .info{
+    
+     bottom:5rem;
+     left: -60px;
+     z-index:1000;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     width:50vh;
+}
+.info h1 {
+  font-size: 8px;
+  position: relative;
+  right: 10px;
+
+
+}
+.info h2 {
+  font-size: 20px;
+ position: relative;
+left:150px;
+}
+.info h3{
+  font-size: 14px;
+  position: relative;
+  right: 15px;
+}
+.info p{
+  font-size:10px;
+  position: relative;
+  right:10px;
+}
+#logout{
+  background-color: #E72150;
+  border:  solid #E72150 ;
+  border-radius: 5px;
+  width:2.5rem;
+  height: 1.5rem;
+  z-index:1000;
+  position: relative;
+  top: 10px;
+}
+#username{
+font-size:10px;
+position: relative;
+left: 10px;
+top: -45px;
+
+}
+.avatar{
+  display: none;
+}
+#training-btn{
+  background-color: #E72150;
+  color: white;
+  border:  solid #E72150;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  height: 45px;
+  width: 65%;
+  position: relative;
+  left:25px;
+  bottom:3rem;
+
+}
+.trust-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.elite-coaches{ 
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+bottom: 5rem;
+left:75px;
+font-size: 13px;
+
+}
+.line{
+ display: none;
+}
+.trust-pic p{
+  font-size:10px;
+  position: relative;
+  left: 25px;
+
+}
+.trust-pic{
+  position: relative;
+  left:6rem;
+  
+
+  
+}
+}
+  

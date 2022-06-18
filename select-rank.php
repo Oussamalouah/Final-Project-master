@@ -2,6 +2,9 @@
 error_reporting(0);
 session_start();
 require 'connect.php';
+if(empty($_SESSION["IDJoueur"])){
+    header("location: index.php");
+  }
 if(isset($_POST['finish'])){
     $Niveau = $_POST['Niveau'];
     $div1 = $_POST['div1'];
@@ -87,10 +90,10 @@ if(isset($_POST['finish'])){
                 <input type="radio" name ="div1" value="IV">
             </div>
         </div>
-         </div>
+     </div>
      </form>
-     <button class ="finish-btn" name="finish"> <a href ="membership.php">FINISH</a></button>
-      </div> 
+           <button class ="finish-btn" name="finish"> <a href ="membership.php">FINISH</a></button>
+    </div> 
 </div>
 <script src="./radio.js"></script> 
 </body>

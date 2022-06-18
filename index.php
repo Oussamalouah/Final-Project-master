@@ -76,17 +76,19 @@ if(!empty($_SESSION["IDJoueur"])){
    </div>
    <p id ="prop">Our Professional Players</p>
    <div class="pro-section">
-         <div class="pros-pics">
+      <div class="imp">
             <img src="./img/Imperialhal.png" alt="">
+            <p id="imp">Imperialhal</p>
+         </div>
+         <div class ="double">
             <img src="./img/doublelift.png" alt="">
-            <img src="./img/tenz.png" alt="">
+            <p id ='double'>Doublelift</p>
          </div>
+            <div class ="tenz">
+               <img src="./img/tenz.png" alt="">
+               <p id='tenz'>Tenz</p>
+            </div>
       </div>
-      <div class="pros-names">
-           <p id="imp">Imperialhal</p>
-           <p id ='double'>Doublelift</p>
-           <p id='tenz'>Tenz</p>
-         </div>
    <footer>
             <img src="./img/logo.png" alt="">
             <div class="company-info">
