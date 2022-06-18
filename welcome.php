@@ -30,18 +30,15 @@ if(!empty($_SESSION["IDJoueur"])){
     <title>ZEUSGUIDES</title>
 </head>
 <div class ="header"> 
-
    <div class="navbar">
             <h1 ><a href="index.php">ZEUSGUIDES</a></h1>
             <button id ="logout"><a href = "logout.php">Logout</a></button>
-            
    </div>
    <div class="username">
          <img  class ="avatar"src="./img/avatar.png" alt="">   
       <p id ="username"> <?php echo $row["Nomutilisateur"] ;?></p>
       
    </div>
-   
 <div class="carousel">
       <div class="carousel_inner">
          <div class="carousel_item carousel_item__active">
@@ -61,7 +58,7 @@ if(!empty($_SESSION["IDJoueur"])){
       <h3>7X LCS CHAMPION</h3>
       <p><b>Learn how to master League of Legends from the most<br> accomplished pro in North America.</br></b></p>
    </div>
-   <div class="btn"><button id ="start-btn"><b><a href="quiz.php">START RIGHT NOW</a></br></button></div>
+   <div class="btn"><button   id ="start-btn"><b><a href="terms.php">START RIGHT NOW</a></br></button></div>
 </div>
 <body>   
    <div class="sections">
@@ -70,7 +67,7 @@ if(!empty($_SESSION["IDJoueur"])){
             <div class="coach-content">
                <h1>Play with a Pro right now</h1>
                <p>Our elite coaches are in the top 1% and can help<br> you take your play to the next level.</br> </p>
-               <button id ="training-btn"><b>START TRAINING</br></button></div>
+               <button id ="training-btn"><b><a href="terms.php">START TRAINING</a></br></button></div>
             </div>
             <div class="trust-content">
                <div class="elite-coaches"> 

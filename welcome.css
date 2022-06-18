@@ -249,6 +249,11 @@ z-index: 1000;
    
    
 }
+.coach-content button a {
+   color: white;
+   text-decoration: none;
+}
+
 
 #start-btn a {
 text-decoration: none;
