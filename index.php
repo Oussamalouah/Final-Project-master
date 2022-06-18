@@ -57,7 +57,7 @@ if(!empty($_SESSION["IDJoueur"])){
       <div class="coach-section">
             <img src="./img/coach.webp" alt="">
             <div class="coach-content">
-               <h1>Play with a Pro right now</h1>
+               <h1 data-text="Play with a Pro right now">Play with a Pro right now</h1>
                <p>Our elite coaches are in the top 1% and can help<br> you take your play to the next level.</br> </p>
                <button id ="training-btn"><b>START TRAINING</br></button></div>
             </div>

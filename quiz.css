@@ -12,11 +12,60 @@
 }
 .logo h1{
     font-size: 50px;
+ 
 }
 h2{
     font-family: 'Quicksand', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
     margin-top:50px;
+    position: relative;
+    top: 50px;
+    
+}
+.logo {
+    animation: fadeIn 1.5s forwards;
+    opacity: 0;
+    transition-timing-function:cubic-bezier(0.785, 0.135, 0.15, 86) ;
+    
+}
+.first{
+    animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 86);
+    z-index: 1;
+    position: relative;
+}
+.slide{
+    overflow: hidden;
+}
+.second{
+    z-index: -1;
+    animation: secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 86);
+    
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes secondspan{
+    0%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 .button{
     height:150px;

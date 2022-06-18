@@ -18,8 +18,8 @@ if(empty($_SESSION["IDJoueur"])){
 <body>
     <div class="logo"> 
         <img src="./img/logo2.png" alt="">
-        <h1>Welcome!</h1>
-        <h2> The following quick quiz will help us<br> personalize your weekly training plan.</br></h2>
+        <h1 class="first">Welcome!</h1>
+        <h2 class="slide"> <span class="second">The following quick quiz will help us personalize your weekly training plan</span>.</h2>
     </div>
     <div class="button"><button class ="start-btn"><b><a href ="select-rank.php">START QUIZ </a></br></button></div>
 </body>

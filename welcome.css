@@ -201,8 +201,19 @@ z-index: 1000;
    z-index:1000;
    display: block;
    width:100vh;
+   animation: info 0.5s ease-in-out ;
    
  
+}
+
+@keyframes info{
+   from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  
 }
 .info h1{
     color: red;

@@ -150,8 +150,18 @@ color: white;
    z-index:1000;
    display: block;
    width:100vh;
-   
+   animation: info 0.5  s ease-in-out ;
+    
  
+}
+@keyframes info{
+   from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  
 }
 .info h1{
     color: red;
@@ -235,7 +245,10 @@ color: white;
  color: black;
  font-family: 'Roboto', sans-serif;
  font-size: 40px;
+ 
+ 
 }
+
 .coach-content p{
    font-family: 'Quicksand', sans-serif;
    font-size:18px;
@@ -294,7 +307,7 @@ margin-right:10rem;
    font-size: 20px;
    font-family: 'Quicksand', sans-serif;
    text-align: center;
-   margin-left: 50px;
+   margin-left:35px;
    margin-top: 20px;
 }
 .pro-section{
