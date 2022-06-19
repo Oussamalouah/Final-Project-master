@@ -30,6 +30,7 @@ if(isset($_POST['registerbtn'])){
     <meta charset="UTF-8">
     <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
     <link rel="stylesheet" href="signup.css">
+    <title>Sign up</title>
    </head>
 <body>
   <div class="container">

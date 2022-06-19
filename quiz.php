@@ -13,10 +13,11 @@ if(empty($_SESSION["IDJoueur"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="quiz.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Quiz</title>
 </head>
 <body>
     <div class="logo"> 
+        <a href ="welcome.php"> <img class="close" id ="closebtn"src="./img/closebtn.png" alt=""></a>
         <img src="./img/logo2.png" alt="">
         <h1 class="first">Welcome!</h1>
         <h2 class="slide"> <span class="second">The following quick quiz will help us personalize your weekly training plan</span>.</h2>

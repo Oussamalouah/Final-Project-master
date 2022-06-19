@@ -17,6 +17,7 @@ if(empty($_SESSION["IDJoueur"])){
     <title>Pro membership</title>
 </head>
 <body>
+ <a href ="welcome.php"> <img  id ="closebtn"src="./img/closebtn.png" alt=""></a>
     <div class="container">
       <div class="text">
         <h1>THE ZEUSGUIDES GUARANTEE</h1>
@@ -33,6 +34,6 @@ if(empty($_SESSION["IDJoueur"])){
            <button  class ="button"><b> <a href ="coach.php">TRY PRO NOW</a></br></button>
        </div>
     </div>
-    
+
 </body>
 </html>

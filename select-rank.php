@@ -13,9 +13,7 @@ if(isset($_POST['finish'])){
      $result= mysqli_query($mysqli,$sql);
      
 
-    }   
-    
-
+    }  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,10 +30,11 @@ if(isset($_POST['finish'])){
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+ <title>Rank Selection</title>
 </head>
-<body>
+<body >
  <div class="title"> 
+    <a href ="welcome.php"> <img  id ="closebtn"src="./img/closebtn.png" alt=""></a>
      <h1>Select your<br> current rank</br></h1>
       <h3>We use this to create your plan </h3> 
       <form action =""  method="post">

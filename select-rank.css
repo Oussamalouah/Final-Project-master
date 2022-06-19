@@ -6,7 +6,24 @@
 body{
     background-color: #FAF7F7;
 }
+#closebtn{
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: 20px;
+}
 
+
+@keyframes anim-shadow{
+    50%{
+        box-shadow: 0px 0px 10px 10px #E72150;
+    }
+    100%{
+        box-shadow: 0px 0px 0px 0px red;
+    }
+}
 .title h1{      
     font-size: 100px;
     font-family: 'Roboto', sans-serif;

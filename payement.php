@@ -12,10 +12,11 @@ if(empty($_SESSION["IDJoueur"])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href ="payement.css">
-    <title>Document</title>
+    <title>payement</title>
 </head>
 <body>
 <div class="payment-title">
+<a href ="welcome.php"> <img  id ="closebtn"src="./img/closebtn.png" alt=""></a>
         <h1>Payment Information</h1>
     </div>
     <div class="container preload">

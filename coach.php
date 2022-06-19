@@ -27,6 +27,7 @@ if(isset($_POST['finish'])){
     <title>Select Your Coach</title>
 </head>
 <body>
+<a href ="welcome.php"> <img  id ="closebtn"src="./img/whiteclose.png" alt=""></a>
     <div class="title"><h1>PICK YOUR COACH</h1></div>
     <div class="container">
         <form method ="post">

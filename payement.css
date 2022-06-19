@@ -363,6 +363,15 @@ input {
     outline: none;
     
 }
+#closebtn{
+    height: 40px;
+    width: 40px;
+    float:right;
+    margin-right: 20px;
+    position: relative;
+    bottom:13rem;
+   
+}
 .btn{
     margin-top:20px;
     position: relative;

@@ -38,6 +38,7 @@ if(isset($_POST["loginbtn"])){
     <!---<title> Responsive Registration Form | CodingLab </title>--->
     <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
+    <title>Login</title>
    </head>
 <body>
   <div class="container">

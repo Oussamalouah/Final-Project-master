@@ -6,6 +6,9 @@
     margin-top:5rem;
     text-align: center;
 }
+h1{
+    margin-right:30px;
+}
 .logo img {
     height: 250px;
     width: 270Px;
@@ -40,6 +43,14 @@ h2{
     z-index: -1;
     animation: secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 86);
     
+}
+#closebtn{
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    bottom: 50px;
 }
 @keyframes fadeIn{
     0%{
